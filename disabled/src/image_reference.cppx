@@ -2,7 +2,7 @@
 // Created by steve on 12/12/2025.
 //
 
-#include "include/image_reference.h"
+#include "include/image_reference.hx"
 #include <sys/mman.h>
 
 using namespace libcamera;

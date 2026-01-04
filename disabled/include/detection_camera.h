@@ -5,7 +5,7 @@
 #include <queue>
 
 #include <memory>
-#include "capture_reference.h"
+#include "disabled/capture_reference.h"
 #include "channel.h"
 
 using namespace libcamera;

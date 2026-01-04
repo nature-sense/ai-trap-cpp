@@ -12,7 +12,7 @@
 #include <boost/asio/experimental/concurrent_channel.hpp>
 #include <boost/system/error_code.hpp>
 #include "detection_camera.h"
-#include "capture_reference.h"
+//#include "../../include/disabled/capture_reference.h"
 #include "channel.h"
 
 using namespace libcamera;
