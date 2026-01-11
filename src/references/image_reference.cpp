@@ -2,12 +2,18 @@
 // Created by steve on 12/12/2025.
 //
 
-#include "include/image_reference.hx"
+#include "image_reference.h"
 #include <sys/mman.h>
 
 using namespace libcamera;
 
 namespace io::naturesense {
+
+    ImageReference::ImageReference() {
+        dma_buf_fd = 0;
+        length = 0;
+        offset = 0;
+    }
     ImageReference::ImageReference(const FrameBuffer::Plane &plane) {
         dma_buf_fd = plane.fd.get();
         length = plane.length;

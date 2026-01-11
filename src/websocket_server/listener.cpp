@@ -1,5 +1,5 @@
-#include "websocket/listener.h"
-#include "websocket/session.h"
+#include "listener.h"
+#include "session.h"
 #include <iostream>
 
 #include <boost/asio.hpp>

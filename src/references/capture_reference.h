@@ -1,7 +1,7 @@
 //
 // Created by steve on 12/12/2025.
 #pragma once
-#include "image_reference.hx"
+#include "image_reference.h"
 
 namespace io::naturesense {
     struct CaptureReference {

@@ -18,12 +18,9 @@ namespace io::naturesense {
         listener = std::make_shared<Listener>(ioc, tcp::endpoint{this->address, this->port});
     }
 
-    asio::awaitable<void> WebsocketServer::start() {
+    asio::awaitable<void> WebsocketServer::start() const{
         std::cout << "WebsocketServer::start" << std::endl;
 
         co_await listener->run();
     }
-
-	WebsocketServer::WebsocketServer()
-
 }

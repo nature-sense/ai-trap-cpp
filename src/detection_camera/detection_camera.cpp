@@ -7,13 +7,12 @@
 #include <iostream>
 #include <memory>
 #include <thread>
-//#include <boost/fiber/all.hpp>
 #include <boost/asio.hpp>
 #include <boost/asio/experimental/concurrent_channel.hpp>
-#include <boost/system/error_code.hpp>
+
 #include "detection_camera.h"
-//#include "../../include/disabled/capture_reference.h"
-#include "channel.h"
+#include "references/capture_reference.h"
+#include "channels/channel.h"
 
 using namespace libcamera;
 
@@ -150,7 +149,7 @@ namespace io::naturesense {
 
         for (const auto& [key, val] : requests) {
             std::cout << key << ": " << val << std::endl;
-            camera->queueRequest(val.get());
+            //camera->queueRequest(val.get());
         }
 
         while (true) {

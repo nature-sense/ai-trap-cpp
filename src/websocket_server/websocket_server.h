@@ -9,7 +9,7 @@
 #include <boost/asio/ip/tcp.hpp>
 #include <boost/asio/awaitable.hpp>
 
-#include "websocket/listener.h"
+#include "listener.h"
 
 namespace asio = boost::asio;
 namespace beast = boost::beast;
@@ -21,7 +21,7 @@ namespace io::naturesense {
     public:
         static asio::awaitable<void> actor(net::io_context& ioc, const char* address, unsigned short port);
         WebsocketServer(asio::io_context& ioc, const char* address, unsigned short port);
-        asio::awaitable<void> start();
+        [[nodiscard]] asio::awaitable<void> start() const;
 
     private:
         asio::io_context& ioc;

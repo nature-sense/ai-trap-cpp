@@ -5,8 +5,8 @@
 #include <queue>
 
 #include <memory>
-#include "disabled/capture_reference.h"
-#include "channel.h"
+#include "../references/capture_reference.h"
+#include "../channels/channel.h"
 
 using namespace libcamera;
 

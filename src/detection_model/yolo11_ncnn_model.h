@@ -1,7 +1,7 @@
 #pragma once
 #include <boost/asio/awaitable.hpp>
-//#include "disabled/capture_reference.h"
-#include "channel.h"
+#include "references/capture_reference.h"
+#include "channels/channel.h"
 #include <ncnn/net.h>
 #include <opencv2/core/types.hpp>
 #include <opencv2/opencv.hpp>
