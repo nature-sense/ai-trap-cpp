@@ -8,7 +8,8 @@
 
 namespace io::naturesense {
     asio::awaitable<void>  Yolo11NcnnModel::actor(
-        Channel<CaptureReference> *cap_ref_chan,
+        Channel<CaptureReference> *det_model_in_chan,
+        Channel<CaptureReference> *tracking_in_chan,
         Channel<uint64_t> *recycle_chan,
         cv::Size hi_res_size,
         cv::Size lo_res_size,
@@ -17,19 +18,21 @@ namespace io::naturesense {
         )
     {
         std::cout << "Starting Yolo11NcnnModel actor..." << std::endl;
-        auto model = Yolo11NcnnModel(cap_ref_chan, recycle_chan, hi_res_size, lo_res_size, proto_path, model_path);
+        auto model = Yolo11NcnnModel(det_model_in_chan, tracking_in_chan, recycle_chan, hi_res_size, lo_res_size, proto_path, model_path);
         co_await model.start();
     }
 
     Yolo11NcnnModel::Yolo11NcnnModel(
-            Channel<CaptureReference> *cap_ref_chan,
+            Channel<CaptureReference> *det_model_in_chan,
+            Channel<CaptureReference> *tracking_in_chan,
             Channel<uint64_t> *recycle_chan,
             cv::Size hi_res_size,
             cv::Size lo_res_size,
             const char* proto_path,
             const char* model_path )
     {
-        this->cap_ref_chan = cap_ref_chan;
+        this->det_model_in_chan = det_model_in_chan;
+        this->tracking_in_chan = tracking_in_chan;
         this->recycle_chan = recycle_chan;
 
         this->hi_res_size = hi_res_size;
@@ -52,12 +55,12 @@ namespace io::naturesense {
         // Initialise the model
 
         while (true) {
-            auto ref = co_await cap_ref_chan->async_receive(asio::use_awaitable);
+            auto ref = co_await det_model_in_chan->async_receive(asio::use_awaitable);
 
-            std::cout << "Received reference : " << ref.id << std::endl;
+            std::cout << "Received reference : " << ref.get_id() << std::endl;
 
-            ImageReference hi_res_image = ref.hi_res_image;
-            ImageReference lo_res_image = ref.lo_res_image;
+            ImageReference hi_res_image = ref.get_hi_res_image();
+            ImageReference lo_res_image = ref.get_lo_res_image();
 
             hi_res_image.trace();
             lo_res_image.trace();
@@ -68,8 +71,7 @@ namespace io::naturesense {
 
             cv::Mat hi_res_matrix(lo_res_size.height, lo_res_size.width, CV_8UC1, hi_res_img_data.first);
 
-
-            co_await recycle_chan->async_send(boost::system::error_code{}, ref.id, asio::use_awaitable);
+            co_await recycle_chan->async_send(boost::system::error_code{}, ref.get_id(), asio::use_awaitable);
         }
     }
 }

@@ -10,7 +10,8 @@ namespace io::naturesense {
     class Yolo11NcnnModel {
     public:
         static asio::awaitable<void> actor(
-            Channel<CaptureReference> *cap_ref_chan,
+            Channel<CaptureReference> *det_model_in_chan,
+            Channel<CaptureReference> *tracking_in_chan,
             Channel<uint64_t> *recycle_chan,
             cv::Size hi_res_size,
             cv::Size lo_res_size,
@@ -19,7 +20,8 @@ namespace io::naturesense {
 
     private:
         Yolo11NcnnModel(
-            Channel<CaptureReference> *cap_ref_chan,
+            Channel<CaptureReference> *det_model_in_chan,
+            Channel<CaptureReference> *tracking_in_chan,
             Channel<uint64_t> *recycle_chan,
             cv::Size hi_res_size,
             cv::Size lo_res_size,
@@ -33,7 +35,8 @@ namespace io::naturesense {
         std::unique_ptr<Stream*> hi_res_stream;
         std::unique_ptr<ncnn::Net> net;
 
-        Channel<CaptureReference> *cap_ref_chan;
+        Channel<CaptureReference> *det_model_in_chan;
+        Channel<CaptureReference> *tracking_in_chan;
         Channel<uint64_t> *recycle_chan;
 
         cv::Size hi_res_size;
