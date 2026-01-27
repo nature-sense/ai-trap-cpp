@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
-    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="3" type="long" />
-    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="4" type="long" />
   </component>
   <component name="CMakeProjectFlavorService">
     <option name="flavorId" value="CMakePlainProjectFlavor" />
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
+      <config projectName="ai-trap-cpp" targetName="tomlplusplus" />
       <config projectName="ai-trap-cpp" targetName="ai-trap-cpp" />
       <config projectName="ai-trap-cpp" targetName="all" />
     </generated>
@@ -22,19 +22,54 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23d7db10-6301-4c27-be07-9dc3091e52cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/references/capture_reference.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/references/detection_reference.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/references/detection_reference.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tracker/tracker.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tracker/tracker.h" afterDir="false" />
+    <list default="true" id="ae9c9cf1-b36b-4e74-a65d-47a0947bc756" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/actor_framework/actor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actor_framework/mailbox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/detection_camera/picamera3/picamera3_actor.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/detection_camera/picamera3/picamera3_actor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/references/capture_reference/capture_reference_mixin.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/references/recycle_reference/recycle_reference.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/references/recycle_reference/recycle_reference_mixin.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generated/control.pb.cc" beforeDir="false" afterPath="$PROJECT_DIR$/archive/generated/control.pb.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generated/control.pb.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/generated/control.pb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generated/protocol.pb.cc" beforeDir="false" afterPath="$PROJECT_DIR$/archive/generated/protocol.pb.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generated/protocol.pb.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/generated/protocol.pb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generated/sessions.pb.cc" beforeDir="false" afterPath="$PROJECT_DIR$/archive/generated/sessions.pb.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generated/sessions.pb.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/generated/sessions.pb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meson.build" beforeDir="false" afterPath="$PROJECT_DIR$/meson.build" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proto" beforeDir="false" afterPath="$PROJECT_DIR$/proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proto/sessions.proto" beforeDir="false" afterPath="$PROJECT_DIR$/proto/sessions.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn_model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn_model.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn_model.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn_model.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/channels/channel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/detection_camera/detection_camera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/detection_camera/ai_camera/ai_camera.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/detection_camera/detection_camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/detection_camera/ai_camera/ai_camera.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn_model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn/yolo11_ncnn_actor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn_model.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn/yolo11_ncnn_actor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/references/capture_reference.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/references/capture_reference.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/references/capture_reference.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/references/capture_reference.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/references/capture_reference/capture_reference.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/references/detection_reference.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/references/detection_reference.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/references/capture_reference/detection_reference.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/references/image_reference.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/references/capture_reference/image_reference.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/references/image_reference.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/references/capture_reference/image_reference.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/session_database/detection_model.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/session_database/detection_model.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/session_database/session_database.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/archive/session_database/session_database.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/session_database/session_database.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/session_database/session_database.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/session_database/session_model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/archive/session_database/session_model.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/session_database/session_model.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/session_database/session_model.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tracker/tracker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/archive/tracker/tracker.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tracker/tracker.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/tracker/tracker.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/websocket_server/listener.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/listener.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/websocket_server/listener.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/listener.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/websocket_server/protocol_msg.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/protocol_msg.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/websocket_server/protocol_msg.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/protocol_msg.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/websocket_server/session.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/session.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/websocket_server/session.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/session.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/websocket_server/websocket_server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/websocket_server.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/websocket_server/websocket_server.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/websocket_server.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,15 +88,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/detection_camera/detection_camera.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/detection_model/yolo11_ncnn_model.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/detection_model/yolo11_ncnn_model.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/references/capture_reference.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/session_database/detection_model.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/session_database/session_database.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/archive/generated/protocol.pb.cc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/archive/generated/protocol.pb.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/archive/generated/sessions.pb.cc" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="inRbat13" />
+    <option name="directoryName" value="ZnidyvJO" />
   </component>
   <component name="MesonLocalSettings">
     <option name="availableProjects">
@@ -93,20 +125,14 @@
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2025" />
-    <option name="minorVersion" value="2.1" />
+    <option name="minorVersion" value="3" />
     <option name="productBranch" value="Classic" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="37VXD359LpT2gdTXtbqTY75ABMG" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectStatusUIService">{
-  &quot;uiKindId&quot;: &quot;Widget&quot;
-}</component>
+  <component name="ProjectId" id="38nYAlMXBVLApziMrNp3d68Qyc8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -117,19 +143,17 @@
     &quot;Native Application.ai-trap-cpp.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -140,7 +164,7 @@
       <window_info id="Backup and Sync History" />
       <window_info id="Pull Requests" />
       <window_info id="Learn" show_stripe_button="false" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1901738" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21170568" />
       <window_info id="Commit" order="1" weight="0.190301" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -152,15 +176,15 @@
       <window_info anchor="bottom" id="clangd" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info anchor="bottom" id="Problems View" order="2" weight="0.33014113" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.33014113" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.10613682" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.43913484" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="CMake" order="5" />
-      <window_info anchor="bottom" id="Build" order="6" weight="0.2517659" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3896169" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.3896169" />
+      <window_info anchor="bottom" id="Build" order="6" weight="0.44014084" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.41800803" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.41800803" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.35901308" />
-      <window_info anchor="bottom" id="Find" order="10" weight="0.33014113" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.32947683" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="PlatformIO" />
       <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
@@ -168,17 +192,13 @@
       <window_info anchor="right" id="Database" order="2" weight="0.25" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
-      <window_info anchor="right" id="Meson" order="5" sideWeight="0.8929348" weight="0.1729097" />
-      <window_info active="true" anchor="right" id="make" order="6" sideWeight="0.107065216" side_tool="true" visible="true" weight="0.17279412" />
+      <window_info anchor="right" id="Meson" order="5" sideWeight="0.89296407" weight="0.15752509" />
+      <window_info anchor="right" id="make" order="6" sideWeight="0.10703593" side_tool="true" weight="0.15752509" />
     </layout>
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/references" />
-      <recent name="$PROJECT_DIR$/src/channels" />
-      <recent name="$PROJECT_DIR$/src/detection_model" />
-      <recent name="$PROJECT_DIR$/src/session_database" />
-      <recent name="$PROJECT_DIR$/src/websocket_server" />
+      <recent name="$PROJECT_DIR$/archive" />
     </key>
   </component>
   <component name="RunManager" selected="Native Application.ai-trap-cpp">
@@ -187,79 +207,42 @@
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ai-trap-cpp" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ai-trap-cpp" TARGET_NAME="ai-trap-cpp" CONFIG_NAME="Default" version="1" RUN_TARGET_PROJECT_NAME="ai-trap-cpp" RUN_TARGET_NAME="ai-trap-cpp">
-      <method v="2">
-        <option name="CLION.COMPOUND.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ai-trap-cpp" TARGET_NAME="all" CONFIG_NAME="Default" version="1">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ai-trap-cpp" TARGET_NAME="all" CONFIG_NAME="Default" version="1">
+    <configuration name="tomlplusplus" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ai-trap-cpp" TARGET_NAME="tomlplusplus" CONFIG_NAME="Default" version="1">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Native Application.tomlplusplus" />
       <item itemvalue="Native Application.ai-trap-cpp" />
       <item itemvalue="Native Application.all" />
     </list>
   </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$PROJECT_DIR$/../.cargo/bin" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="23d7db10-6301-4c27-be07-9dc3091e52cc" name="Changes" comment="" />
-      <created>1766989088863</created>
+      <changelist id="ae9c9cf1-b36b-4e74-a65d-47a0947bc756" name="Changes" comment="" />
+      <created>1769436672813</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1766989088863</updated>
-      <workItem from="1766989090285" duration="3876000" />
-      <workItem from="1766993267046" duration="12199000" />
-      <workItem from="1767071182013" duration="8000" />
-      <workItem from="1767071356081" duration="14631000" />
-      <workItem from="1767157293063" duration="1946000" />
-      <workItem from="1767159785796" duration="3688000" />
-      <workItem from="1767164256772" duration="2054000" />
-      <workItem from="1767167980373" duration="4233000" />
-      <workItem from="1767243427065" duration="2938000" />
-      <workItem from="1767247667638" duration="13402000" />
-      <workItem from="1767328170429" duration="4872000" />
-      <workItem from="1767334217278" duration="2340000" />
-      <workItem from="1767336635125" duration="6692000" />
-      <workItem from="1767505257487" duration="20472000" />
-      <workItem from="1767583327379" duration="3967000" />
-      <workItem from="1767587737605" duration="17035000" />
-      <workItem from="1767671110199" duration="14400000" />
-      <workItem from="1767773398382" duration="12904000" />
-      <workItem from="1767854146598" duration="18175000" />
-      <workItem from="1768120147480" duration="31099000" />
+      <updated>1769436672813</updated>
+      <workItem from="1769436679379" duration="6352000" />
+      <workItem from="1769489146463" duration="900000" />
+      <workItem from="1769491302146" duration="642000" />
+      <workItem from="1769493407610" duration="609000" />
+      <workItem from="1769496119398" duration="791000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/session_database/session_database.cpp</url>
-          <line>80</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/session_database/session_database.cpp</url>
-          <line>66</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/main.cpp</url>
-          <line>1</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
