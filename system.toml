@@ -1,11 +1,9 @@
 # ------------------------------------
 # Picamera3 Actor
 # ------------------------------------
-["picamera3"]
-
 ["picamera3.hi_res_size"]
-width = 4096
-height = 2048
+width = 2304
+height = 1296
 
 ["picamera3.lo_res_size"]
 width = 320
@@ -15,8 +13,8 @@ height = 320
 # Yolo11 Ncnn Actor
 # ------------------------------------
 ["yolo11ncnn"]
-proto_path = ""
-model_path = ""
+proto_path = "/home/steve/ai-trap-cpp/resources/model.ncnn.param"
+model_path = "/home/steve/ai-trap-cpp/resources/model.ncnn.bin"
 
 
 

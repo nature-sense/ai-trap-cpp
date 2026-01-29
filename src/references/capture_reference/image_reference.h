@@ -1,7 +1,7 @@
 #pragma once
-#include <libcamera/libcamera.h>
+#include <libcamera/framebuffer.h>
 
-using namespace libcamera;
+using libcamera::FrameBuffer;
 
 namespace io::naturesense {
     struct ImageReference {

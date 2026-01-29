@@ -4,6 +4,7 @@
 
 #include "image_reference.h"
 #include <sys/mman.h>
+#include <iostream>
 
 using namespace libcamera;
 

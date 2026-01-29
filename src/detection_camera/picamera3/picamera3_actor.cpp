@@ -1,17 +1,15 @@
 #include "picamera3_actor.h"
 #include "actor_framework/mailbox.h"
+#include <libcamera/camera_manager.h>
+#include <libcamera/formats.h>
 
-namespace asio = boost::asio;
-namespace experimental = asio::experimental;
+namespace experimental = boost::asio::experimental;
 
 namespace io::naturesense {
-    Picamera3Actor::~Picamera3Actor() {
-        Actor::~Actor();
-        RecycleReferenceMixin::~RecycleReferenceMixin();
-    };
+    Picamera3Actor::~Picamera3Actor() {};
 
-    asio::awaitable<void> Picamera3Actor::post_async(RecycleReference ref) {
-        co_await mailbox.async_send(error_code(), ref);
+    awaitable<void> Picamera3Actor::post_async(RecycleReference ref) {
+        co_await mailbox.async_send(boost::system::error_code(), ref, asio::use_awaitable);
     }
     void Picamera3Actor::post_sync(RecycleReference ref) {
         mailbox.try_send(error_code(), ref);
@@ -30,13 +28,13 @@ namespace io::naturesense {
         // -----------------------------------------------------
         // Read the frame sizes from the system.toml file
         // -----------------------------------------------------
-        auto conf = this->cfg[name];
-        int hi_res_width  = conf["hi_res_size"]["width"].value_or(0);
-        int hi_res_height  = conf["hi_res_size"]["height"].value_or(0);
+        //auto conf = this->cfg[name];
+        int hi_res_width  = this->cfg["picamera3.hi_res_size"]["width"].value_or(0);
+        int hi_res_height  = this->cfg["picamera3.hi_res_size"]["height"].value_or(0);
         this->hi_res_size = cv::Size(hi_res_width, hi_res_height);
 
-        int lo_res_width  = conf["lo_res_size"]["width"].value_or(0);
-        int lo_res_height  = conf["lo_res_size"]["height"].value_or(0);
+        int lo_res_width  = this->cfg["picamera3.lo_res_size"]["width"].value_or(0);
+        int lo_res_height  = this->cfg["picamera3.lo_res_size"]["height"].value_or(0);
         this->lo_res_size = cv::Size(lo_res_width, lo_res_height);
 
         // -----------------------------------------------------
@@ -76,7 +74,7 @@ namespace io::naturesense {
         StreamConfiguration &hi_res_config = config->at(0);
         hi_res_config.size.width = hi_res_size.width;
         hi_res_config.size.height = hi_res_size.height;
-        hi_res_config.pixelFormat = PixelFormat(formats::RGB888);
+        hi_res_config.pixelFormat = PixelFormat(libcamera::formats::RGB888);
 
         // -----------------------------------------------------
         // Modify the viewfinder stream to become
@@ -85,7 +83,7 @@ namespace io::naturesense {
         StreamConfiguration &lo_res_config = config->at(1);
         lo_res_config.size.width = lo_res_size.width;
         lo_res_config.size.height = lo_res_size.height;
-        lo_res_config.pixelFormat = PixelFormat(formats::RGB888);
+        lo_res_config.pixelFormat = PixelFormat(libcamera::formats::RGB888);
 
 
         // -----------------------------------------------------
@@ -186,7 +184,7 @@ namespace io::naturesense {
         }
 
         camera->requestCompleted.connect(Picamera3Actor::request_completed);
-        std::cout << "Init camera - complete" << std::endl;
+        std::cout << "Init Picamera3Actor - complete" << std::endl;
     }
 
 

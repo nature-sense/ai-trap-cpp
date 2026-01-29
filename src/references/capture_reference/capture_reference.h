@@ -3,9 +3,6 @@
 #pragma once
 #include "image_reference.h"
 #include "detection_reference.h"
-#include <boost/asio.hpp>
-
-namespace asio = boost::asio;
 
 namespace io::naturesense {
     struct CaptureReference {

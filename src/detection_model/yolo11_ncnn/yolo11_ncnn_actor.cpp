@@ -4,6 +4,7 @@
 #include <boost/asio.hpp>
 #include <boost/asio/experimental/concurrent_channel.hpp>
 #include <boost/system/error_code.hpp>
+
 #include "yolo11_ncnn_actor.h"
 #include "actor_framework/mailbox.h"
 
@@ -11,8 +12,8 @@ namespace io::naturesense {
 
     Yolo11NcnnActor::~Yolo11NcnnActor() = default;
 
-    asio::awaitable<void> Yolo11NcnnActor::post_async(CaptureReference ref) {
-        co_await mailbox.async_send(error_code(), ref);
+    awaitable<void> Yolo11NcnnActor::post_async(CaptureReference ref) {
+        co_await mailbox.async_send(boost::system::error_code(), ref, asio::use_awaitable);
     }
     void Yolo11NcnnActor::post_sync(CaptureReference ref) {
         mailbox.try_send(error_code(), ref);
@@ -31,16 +32,18 @@ namespace io::naturesense {
 
     void Yolo11NcnnActor::initialise() {
 
+        std::cout << "Initialising Yolo11NcnnActor" << std::endl;
+
         // -----------------------------------------------------
         // Read the frame sizes from the system.toml file
         // -----------------------------------------------------
         auto conf = this->cfg[name];
 
-        const char* proto_path = conf["proto"].value_or("");
-        const char* model_path = conf["model"].value_or("");
+        const char* proto_path = this->cfg["yolo11ncnn"]["proto_path"].value_or("undefined");
+        const char* model_path = this->cfg["yolo11ncnn"]["model_path"].value_or("undefined");
 
-        int hi_res_width  = conf["hi_res_size"]["width"].value_or(0);
-        int hi_res_height  = conf["hi_res_size"]["height"].value_or(0);
+        int hi_res_width  = this->cfg["hi_res_size"]["width"].value_or(0);
+        int hi_res_height  = this->cfg["hi_res_size"]["height"].value_or(0);
         this->hi_res_size = cv::Size(hi_res_width, hi_res_height);
 
         net = std::make_unique<ncnn::Net>();
@@ -52,15 +55,17 @@ namespace io::naturesense {
             std::cerr << "failed to open file " << model_path << std::endl;
             std::abort();
         }
+
+        std::cout << "Init Yolo11NcnnActor - complete" << std::endl;
     }
 
 
-    asio::awaitable<void> Yolo11NcnnActor::start() {
+    awaitable<void> Yolo11NcnnActor::start() {
         // Initialise the model
 
         while (true) {
             auto [ec,msg] =
-                co_await mailbox.async_receive(asio::as_tuple(asio::use_awaitable));
+                co_await mailbox.async_receive(asio::as_tuple(boost::asio::use_awaitable));
             if (!ec) {
                 auto visitor = overload {
                     [this](const CaptureReference& ref) {

@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
-    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="4" type="long" />
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="25" type="long" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
   </component>
   <component name="CMakeProjectFlavorService">
     <option name="flavorId" value="CMakePlainProjectFlavor" />
@@ -22,54 +23,238 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae9c9cf1-b36b-4e74-a65d-47a0947bc756" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actor_framework/actor.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actor_framework/mailbox.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/detection_camera/picamera3/picamera3_actor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/detection_camera/picamera3/picamera3_actor.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/references/capture_reference/capture_reference_mixin.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/references/recycle_reference/recycle_reference.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/references/recycle_reference/recycle_reference_mixin.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" />
+    <list default="true" id="71ce9f99-f632-4960-8ad8-e2c137922ca3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/subprojects/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/control.pb.cc" beforeDir="false" afterPath="$PROJECT_DIR$/archive/generated/control.pb.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/control.pb.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/generated/control.pb.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/protocol.pb.cc" beforeDir="false" afterPath="$PROJECT_DIR$/archive/generated/protocol.pb.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/protocol.pb.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/generated/protocol.pb.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/sessions.pb.cc" beforeDir="false" afterPath="$PROJECT_DIR$/archive/generated/sessions.pb.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/sessions.pb.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/generated/sessions.pb.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meson.build" beforeDir="false" afterPath="$PROJECT_DIR$/meson.build" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto" beforeDir="false" afterPath="$PROJECT_DIR$/proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/sessions.proto" beforeDir="false" afterPath="$PROJECT_DIR$/proto/sessions.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/channels/channel.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/detection_camera/detection_camera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/detection_camera/ai_camera/ai_camera.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/detection_camera/detection_camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/detection_camera/ai_camera/ai_camera.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn_model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn/yolo11_ncnn_actor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn_model.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn/yolo11_ncnn_actor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/references/capture_reference.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/references/capture_reference.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/references/capture_reference/capture_reference.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/references/detection_reference.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/references/detection_reference.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/references/capture_reference/detection_reference.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/references/image_reference.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/references/capture_reference/image_reference.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/references/image_reference.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/references/capture_reference/image_reference.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/session_database/detection_model.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/session_database/detection_model.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/session_database/session_database.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/archive/session_database/session_database.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/session_database/session_database.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/session_database/session_database.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/session_database/session_model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/archive/session_database/session_model.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/session_database/session_model.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/session_database/session_model.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tracker/tracker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/archive/tracker/tracker.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tracker/tracker.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/tracker/tracker.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/websocket_server/listener.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/listener.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/websocket_server/listener.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/listener.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/websocket_server/protocol_msg.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/protocol_msg.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/websocket_server/protocol_msg.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/protocol_msg.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/websocket_server/session.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/session.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/websocket_server/session.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/session.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/websocket_server/websocket_server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/websocket_server.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/websocket_server/websocket_server.h" beforeDir="false" afterPath="$PROJECT_DIR$/archive/websocket_server/websocket_server.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actor_framework/actor.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/actor_framework/actor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/detection_camera/picamera3/picamera3_actor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/detection_camera/picamera3/picamera3_actor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/detection_camera/picamera3/picamera3_actor.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/detection_camera/picamera3/picamera3_actor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn/yolo11_ncnn_actor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn/yolo11_ncnn_actor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn/yolo11_ncnn_actor.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/detection_model/yolo11_ncnn/yolo11_ncnn_actor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/references/capture_reference/capture_reference.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/references/capture_reference/capture_reference.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/references/capture_reference/capture_reference_mixin.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/references/capture_reference/capture_reference_mixin.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/references/capture_reference/image_reference.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/references/capture_reference/image_reference.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/references/capture_reference/image_reference.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/references/capture_reference/image_reference.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/packagecache/tomlplusplus-3.4.0.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.clang-format" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.github/FUNDING.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.github/ISSUE_TEMPLATE/bug_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.github/ISSUE_TEMPLATE/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.github/ISSUE_TEMPLATE/feature_request.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.github/ISSUE_TEMPLATE/spec_bug_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.github/pull_request_template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.github/workflows/ci.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.github/workflows/gh-pages.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.gitmodules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.meson-subproject-wrap-hash.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.runsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/.tipi/deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/CODE_OF_CONDUCT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/cmake/install-rules.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/cmake/project-is-top-level.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/cmake/tomlplusplusConfig.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/cmake/tomlplusplusConfig.cmake.meson.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/cmake/tomlplusplusConfigVersion.cmake.meson.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/cmake/variables.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/cpp.hint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/docs/images/badge-C++17.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/docs/images/badge-TOML.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/docs/images/badge-awesome.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/docs/images/badge-gitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/docs/images/badge-license-MIT.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/docs/images/banner.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/docs/images/banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/docs/images/banner.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/docs/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/docs/images/logo.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/docs/images/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/docs/pages/main_page.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/docs/poxy.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/benchmark_data.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/error_printer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/error_printer.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/example.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/examples.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/merge_base.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/merge_overrides.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/meson.build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/parse_benchmark.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/parse_benchmark.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/simple_parser.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/simple_parser.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/toml_generator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/toml_generator.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/toml_merger.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/toml_merger.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/toml_to_json_transcoder.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/examples/toml_to_json_transcoder.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/meson.build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/array.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/array.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/at_path.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/at_path.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/date_time.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/formatter.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/formatter.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/forward_declarations.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/header_end.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/header_start.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/json_formatter.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/json_formatter.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/key.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/make_node.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/node.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/node.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/node_view.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/parse_error.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/parse_result.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/parser.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/parser.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/path.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/path.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/preprocessor.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/print_to_stream.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/print_to_stream.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/simd.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/source_region.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/std_except.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/std_initializer_list.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/std_map.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/std_new.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/std_optional.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/std_string.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/std_string.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/std_utility.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/std_variant.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/std_vector.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/table.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/table.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/toml_formatter.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/toml_formatter.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/unicode.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/unicode.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/unicode_autogenerated.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/value.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/version.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/yaml_formatter.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/impl/yaml_formatter.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/toml.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/include/toml++/toml.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/meson.build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/meson_options.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/src/meson.build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/src/toml.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/at_path.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/conformance_burntsushi_invalid.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/conformance_burntsushi_valid.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/conformance_iarna_invalid.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/conformance_iarna_valid.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/cpp.hint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/for_each.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/formatters.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/impl_toml.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/leakproof.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/lib_catch2.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/manipulating_arrays.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/manipulating_parse_result.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/manipulating_tables.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/manipulating_values.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/meson.build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/odr_test_1.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/odr_test_2.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/parsing_arrays.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/parsing_booleans.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/parsing_comments.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/parsing_dates_and_times.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/parsing_floats.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/parsing_integers.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/parsing_key_value_pairs.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/parsing_spec_example.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/parsing_strings.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/parsing_tables.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/path.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/settings.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/tests.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/tests.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/user_feedback.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/using_iterators.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/visit.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/odr_test.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x64.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x64_cpplatest.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x64_cpplatest_noexcept.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x64_cpplatest_noexcept_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x64_cpplatest_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x64_noexcept.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x64_noexcept_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x64_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x86.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x86_cpplatest.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x86_cpplatest_noexcept.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x86_cpplatest_noexcept_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x86_cpplatest_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x86_noexcept.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x86_noexcept_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_debug_x86_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x64.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x64_cpplatest.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x64_cpplatest_noexcept.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x64_cpplatest_noexcept_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x64_cpplatest_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x64_noexcept.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x64_noexcept_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x64_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x86.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x86_cpplatest.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x86_cpplatest_noexcept.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x86_cpplatest_noexcept_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x86_cpplatest_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x86_noexcept.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x86_noexcept_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/vs/test_release_x86_unrel.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tests/windows_compat.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/toml++.code-workspace" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/toml++.natvis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/toml++.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/toml++.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/toml++.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/toml++.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/toml-test/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/toml-test/meson.build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/toml-test/tt.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/toml-test/tt_decoder.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/toml-test/tt_decoder.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/toml-test/tt_encoder.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/toml-test/tt_encoder.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/toml.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tools/ci_single_header_check.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tools/clang_format.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tools/generate_conformance_tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tools/generate_single_header.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tools/generate_single_header.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tools/generate_windows_test_targets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tools/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tools/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/tools/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/vendor/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/vendor/catch.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subprojects/tomlplusplus-3.4.0/vendor/json.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system.toml" beforeDir="false" afterPath="$PROJECT_DIR$/system.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,12 +273,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/archive/generated/protocol.pb.cc" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/archive/generated/protocol.pb.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/archive/generated/sessions.pb.cc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="ZnidyvJO" />
+    <option name="directoryName" value="nf8a8cnC" />
   </component>
   <component name="MesonLocalSettings">
     <option name="availableProjects">
@@ -132,31 +323,35 @@
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="38nYAlMXBVLApziMrNp3d68Qyc8" />
+  <component name="ProjectId" id="38rxDw8JzzAqtK5ODViRl9Iq1sM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Native Application.ai-trap-cpp.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Native Application.ai-trap-cpp.executor": "Run",
+    "Native Application.ipu3-pack.executor": "Run",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.first.attach.projects": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Bookmarks" side_tool="true" />
@@ -164,27 +359,30 @@
       <window_info id="Backup and Sync History" />
       <window_info id="Pull Requests" />
       <window_info id="Learn" show_stripe_button="false" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21170568" />
-      <window_info id="Commit" order="1" weight="0.190301" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21464285" />
+      <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Python Packages" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="File Transfer" />
       <window_info anchor="bottom" id="Serial Monitor" />
+      <window_info anchor="bottom" id="PythonProcessOutput" />
       <window_info anchor="bottom" id="Vcpkg" />
+      <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="clangd" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info anchor="bottom" id="Problems View" order="2" weight="0.10613682" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.43913484" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.33006197" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="CMake" order="5" />
-      <window_info anchor="bottom" id="Build" order="6" weight="0.44014084" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.41800803" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.41800803" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.35901308" />
-      <window_info anchor="bottom" id="Find" order="10" weight="0.32947683" />
+      <window_info anchor="bottom" id="Build" order="6" weight="0.3465909" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.33006197" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.46539256" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.33006197" />
+      <window_info anchor="right" id="make" side_tool="true" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="PlatformIO" />
       <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
@@ -192,14 +390,9 @@
       <window_info anchor="right" id="Database" order="2" weight="0.25" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
-      <window_info anchor="right" id="Meson" order="5" sideWeight="0.89296407" weight="0.15752509" />
-      <window_info anchor="right" id="make" order="6" sideWeight="0.10703593" side_tool="true" weight="0.15752509" />
+      <window_info anchor="right" id="Meson" order="5" weight="0.20035714" />
+      <window_info anchor="right" id="Python Console" order="6" weight="0.25464284" />
     </layout>
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/archive" />
-    </key>
   </component>
   <component name="RunManager" selected="Native Application.ai-trap-cpp">
     <configuration name="ai-trap-cpp" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ai-trap-cpp" TARGET_NAME="ai-trap-cpp" CONFIG_NAME="Default" version="1" RUN_TARGET_PROJECT_NAME="ai-trap-cpp" RUN_TARGET_NAME="ai-trap-cpp">
@@ -223,26 +416,37 @@
       <item itemvalue="Native Application.all" />
     </list>
   </component>
-  <component name="RustProjectSettings">
-    <option name="toolchainHomeDirectory" value="$PROJECT_DIR$/../.cargo/bin" />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ae9c9cf1-b36b-4e74-a65d-47a0947bc756" name="Changes" comment="" />
-      <created>1769436672813</created>
+      <changelist id="71ce9f99-f632-4960-8ad8-e2c137922ca3" name="Changes" comment="" />
+      <created>1769571386158</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1769436672813</updated>
-      <workItem from="1769436679379" duration="6352000" />
-      <workItem from="1769489146463" duration="900000" />
-      <workItem from="1769491302146" duration="642000" />
-      <workItem from="1769493407610" duration="609000" />
-      <workItem from="1769496119398" duration="791000" />
+      <updated>1769571386158</updated>
+      <workItem from="1769571402998" duration="23472000" />
+      <workItem from="1769610614504" duration="287000" />
+      <workItem from="1769610957223" duration="3720000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/references/capture_reference/image_reference.cpp</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/detection_model/yolo11_ncnn/yolo11_ncnn_actor.cpp</url>
+          <line>44</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

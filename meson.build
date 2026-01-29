@@ -5,22 +5,20 @@ project('ai-trap-cpp', 'cpp',
                      #'werror = false'  ])
 
 tomlplusplus_proj = subproject('tomlplusplus')
-
+#
 cc = meson.get_compiler('cpp')
 
 if cc.has_argument('-Wno-deprecated-enum-enum-conversion')
     add_project_arguments('-Wno-deprecated-enum-enum-conversion', language: 'cpp')
 endif
 
-lib_camera_dep  = cc.find_library('camera', required: true,  dirs: ['/usr/local/lib/aarch64-linux-gnu'])
-lib_camera_base_dep  = cc.find_library('camera-base', required: true,  dirs: ['/usr/local/lib/aarch64-linux-gnu'])
-lib_pisp_dep  = cc.find_library('pisp', required: true, dirs: ['/usr/local/lib/aarch64-linux-gnu'])
+libcamera_dep = dependency('libcamera')
 lib_ncnn_dep = cc.find_library('ncnn', required: true, dirs: ['/usr/local/lib/ncnn'])
 
 openmp_dep = dependency('openmp', required: true)
-boost_deps = dependency('boost', modules: ['filesystem'], required: true)
+boost_deps = dependency('boost', modules: ['system'], required: true)
 opencv_deps = dependency('opencv4', modules: ['core'], required: true)
-rocksdb_dep = dependency('rocksdb', required: true)
+#rocksdb_dep = dependency('rocksdb', required: true)
 protobuf_dep = dependency('protobuf', required: true)
 tomlplusplus_dep = dependency('tomlplusplus')
 
@@ -29,8 +27,8 @@ tomlplusplus_dep = dependency('tomlplusplus')
 inc_dirs = include_directories(
      #'generated',
      'src',
-     '/usr/local/include/libcamera',
-     '/usr/local/include/libpisp'
+     #'/usr/local/include/libcamera',
+     #'/usr/local/include/libpisp'
     )
 
 exe = executable('ai-trap-cpp',
@@ -48,9 +46,9 @@ exe = executable('ai-trap-cpp',
                  #'generated/sessions.pb.cc',
                  install : true,
                  dependencies: [
-                     lib_camera_dep,
-                     lib_camera_base_dep,
-                     lib_pisp_dep,
+                     libcamera_dep,
+                     #lib_camera_base_dep,
+                     #libpisp_dep,
                      boost_deps,
                      opencv_deps,
                      lib_ncnn_dep,

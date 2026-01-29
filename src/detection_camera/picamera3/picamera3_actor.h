@@ -1,17 +1,34 @@
 #pragma once
-#include <boost/asio.hpp>
-#include <libcamera/libcamera.h>
 #include <opencv2/opencv.hpp>
+
+#include <boost/asio.hpp>
 #include <boost/asio/experimental/concurrent_channel.hpp>
 #include <boost/asio/awaitable.hpp>
+
+#include <libcamera/camera.h>
+#include <libcamera/camera_manager.h>
+#include <libcamera/framebuffer_allocator.h>
+#include <libcamera/formats.h>
+
 #include "actor_framework/actor.h"
 
 #include "references/capture_reference/capture_reference_mixin.h"
 #include "references/recycle_reference/recycle_reference.h"
 #include "references/recycle_reference/recycle_reference_mixin.h"
 
-namespace asio = boost::asio;
-using asio::experimental::concurrent_channel;
+using boost::asio::experimental::concurrent_channel;
+using boost::asio::io_context;
+using boost::asio::awaitable;
+
+using libcamera::Camera;
+using libcamera::CameraManager;
+using libcamera::CameraConfiguration;
+using libcamera::Stream;
+using libcamera::StreamRole;
+using libcamera::StreamConfiguration;
+using libcamera::PixelFormat;
+using libcamera::FrameBufferAllocator;
+using libcamera::Request;
 
 namespace io::naturesense {
 
@@ -22,20 +39,20 @@ namespace io::naturesense {
         using Mailbox = concurrent_channel<void(error_code, std::variant<RecycleReference>)>;
 
     public:
-        Picamera3Actor(asio::io_context* ioc, toml::table& cfg) : Actor(ioc, cfg), RecycleReferenceMixin() {};
+        Picamera3Actor(io_context* ioc, toml::table& cfg) : Actor(ioc, cfg), RecycleReferenceMixin() {};
         ~Picamera3Actor() override;
 
         // ----------------------------------------------------------
         // Actor function implementations
         // ----------------------------------------------------------
         void initialise() override;
-        asio::awaitable<void> start() override;
+        awaitable<void> start() override;
         void stop() override;
 
         // ----------------------------------------------------------
         // RecycleReferenceMixin function implementations
         // ----------------------------------------------------------
-        asio::awaitable<void> post_async(RecycleReference ref) override;
+        awaitable<void> post_async(RecycleReference ref) override;
         void post_sync(RecycleReference ref) override;
 
         // ----------------------------------------------------------
